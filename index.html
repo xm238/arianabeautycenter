@@ -130,6 +130,26 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 i.fas, i.fab, i.far { font-family: "Font Awesome 6 Free" !important; font-weight: 900 !important; }
 </style>
 
+
+<style>
+/* CSS Overrides for Ariana */
+.template-image-placeholder, .hero-shape-1, .hero-shape-2, .hero-shape-3, .category-icon { 
+    border: none !important; 
+    padding: 0 !important; 
+    background: transparent !important; 
+    overflow: hidden !important; 
+}
+.template-image-placeholder::before, .template-image-placeholder::after { display: none !important; }
+/* Global Icon Fix */
+[class^="fa-"], [class*=" fa-"] {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+}
+.vs-btn i { margin-right: 8px; }
+/* Placeholder Text Kill */
+.template-image-placeholder { font-size: 0 !important; color: transparent !important; }
+</style>
+
 </head>
 <style>
     @media only screen and (max-width: 992px) {
