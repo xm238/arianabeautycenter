@@ -13,21 +13,21 @@
       <link rel="stylesheet" href="template-3-assets/css/app.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
       <link rel="stylesheet" href="template-3-assets/css/style.css">
-       <title>Ana Sayfa - Ariana Beauty Center & Clinic | Beşiktaş Güzellik & Klinik</title>
+       <title>Ana Sayfa - Güzellik Salonu Şablonu</title>
 
 		<!-- All in One SEO 4.4.3 - aioseo.com -->
 		<meta name="robots" content="max-image-preview:large" />
 		
 		<meta name="generator" content="All in One SEO (AIOSEO) 4.4.3" />
 		<meta property="og:locale" content="tr_TR" />
-		<meta property="og:site_name" content="Ariana Beauty Center & Clinic | Beşiktaş Güzellik & Klinik -" />
+		<meta property="og:site_name" content="Güzellik Salonu Şablonu -" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Ariana Beauty Center & Clinic | Beşiktaş Güzellik & Klinik" />
+		<meta property="og:title" content="Güzellik Salonu Şablonu" />
 		
 		
 		
 		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:title" content="Ariana Beauty Center & Clinic | Beşiktaş Güzellik & Klinik" />
+		<meta name="twitter:title" content="Güzellik Salonu Şablonu" />
 		
 		<!-- All in One SEO -->
 
@@ -102,84 +102,71 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 
 <style>
+/* Ariana Differentiated Aesthetic */
 :root {
-    --theme-color: #d63384 !important; /* Ariana Pink */
-    --theme-color2: #6f42c1 !important; /* Neon Purple */
+    --theme-color: #E10098 !important; /* Neon Magenta */
+    --theme-color2: #8A2BE2 !important; /* Deep Purple */
     --title-color: #2c2c2c !important;
 }
-.vs-btn.style3 { background-color: var(--theme-color) !important; }
-.header-top { background-color: var(--theme-color) !important; }
-.category-style1:hover { background-color: var(--theme-color) !important; }
-.testi-style3 { border-bottom: 3px solid var(--theme-color) !important; }
-</style>
-
-
-<style>
-.sec-title, .hero-title { text-shadow: 0 0 10px rgba(214, 51, 132, 0.2); }
-.vs-btn:hover { box-shadow: 0 0 20px rgba(111, 66, 193, 0.5); }
-.header-top { background: linear-gradient(90deg, #d63384, #6f42c1) !important; }
-</style>
-
-
-<style>
-/* Ariana Final Layout Fix */
-.template-image-placeholder, .hero-shape-1, .hero-shape-2, .hero-shape-3, .category-icon, .img-1, .img-2, .banner-img {
-    overflow: hidden !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    border: none !important; /* Remove the dashed border */
-    padding: 0 !important;
+body {
+    background-color: #FFFAFA; /* Snow background to contrast neon */
 }
-.filled-img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
+.header-top { 
+    background: linear-gradient(90deg, #E10098, #8A2BE2) !important; 
+}
+.vs-btn.style3, .vs-btn.style2 { 
+    background-color: var(--theme-color) !important; 
+    box-shadow: 0 4px 15px rgba(225, 0, 152, 0.4);
+    border-radius: 25px;
+}
+.category-style1:hover { 
+    background-color: var(--theme-color) !important; 
+    box-shadow: 0 5px 20px rgba(138, 43, 226, 0.3);
+}
+.sec-title, .hero-title { 
+    text-shadow: 0 0 10px rgba(225, 0, 152, 0.2); 
+    font-family: 'Marcellus', serif;
+}
+.testi-style3 { 
+    border-bottom: 3px solid var(--theme-color) !important; 
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+</style>
+
+
+<style>
+/* Ariana Perfect Image Fit */
+.template-image-placeholder {
     display: block !important;
+    padding: 0 !important;
+    border: none !important;
+    overflow: hidden !important;
+    background: transparent !important;
+    position: relative;
 }
-/* Ensure animations work on the new images */
-.jump-img img, .rotate-img img { border-radius: inherit; }
-
-/* ICON RESTORATION: Force FontAwesome 5 (Original Template Version) */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
-i.fas, i.fab, i.far { 
-    font-family: "Font Awesome 5 Free" !important; 
-    font-weight: 900 !important; 
-    display: inline-block !important;
-    font-style: normal !important;
+.perfect-fit-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit; /* respects parent rounding */
 }
+/* Ensure parent containers that rely on content height don't collapse */
+.gallery-style3 { aspect-ratio: 1/1; position: relative; }
+.category-icon { aspect-ratio: 1/1; position: relative; overflow: hidden; }
+.img-box3 .img-1, .img-box3 .img-2 { position: relative; overflow: hidden; border-radius: 15px; }
+.hero-shape-1, .hero-shape-2, .hero-shape-3 { position: relative; overflow: hidden; border-radius: 50%; }
+.testi-avater { position: relative; overflow: hidden; aspect-ratio: 1/1; }
 </style>
 
 
 <style>
-/* Ariana Final Layout Restoration */
-.category-icon, .gallery-style3, .img-box3 .img-1, .img-box3 .img-2, .testi-avater {
-    aspect-ratio: 1 / 1 !important;
-    overflow: hidden !important;
-    border: none !important;
-}
-.category-icon img, .gallery-style3 img, .testi-avater img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-}
-/* Gallery Grid Fix: Ensure items are sized correctly in the row */
-.gallery-style3 {
-    margin-bottom: 30px;
-    border-radius: 15px;
-}
-/* Hero Shapes fix */
-.hero-shape-1, .hero-shape-2, .hero-shape-3 {
-    border-radius: 50% !important;
-    overflow: hidden !important;
-}
-/* Service Card consistency */
-.category-style1 {
-    height: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-}
+/* Override inline styles for logo placeholder if any */
+.template-logo-placeholder { border: none !important; padding: 0 !important; background: transparent !important; }
 </style>
 
 </head>
@@ -210,15 +197,35 @@ i.fas, i.fab, i.far {
    <body>
       <div class="preloader">
          <div class="preloader-inner">
-            
+            <div class="template-logo-placeholder">
 <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="50" cy="50" r="48" fill="none" stroke="#d63384" stroke-width="2"/>
-  <path d="M35 70 L50 30 L65 70 M40 60 L60 60" fill="none" stroke="#d63384" stroke-width="3" stroke-linecap="round"/>
-  <path d="M75 40 C80 50 80 60 75 70" fill="none" stroke="#d63384" stroke-width="3" stroke-linecap="round"/>
-  <path d="M25 40 C20 50 20 60 25 70" fill="none" stroke="#d63384" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="50" cy="20" r="5" fill="#d63384"/>
-</svg>
+  <!-- Glowing effect definitions -->
+  <defs>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background circle (Soft Pink) -->
+  <circle cx="50" cy="50" r="48" fill="#FFF0F5" stroke="#E10098" stroke-width="2"/>
+  
+  <!-- Outer glowing ring (Neon Purple) -->
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#8A2BE2" stroke-width="1.5" filter="url(#neonGlow)"/>
 
+  <!-- Floral abstract shapes -->
+  <path d="M 20 50 Q 50 10 80 50 Q 50 90 20 50 Z" fill="none" stroke="#FF69B4" stroke-width="1" opacity="0.6"/>
+  <path d="M 50 20 Q 90 50 50 80 Q 10 50 50 20 Z" fill="none" stroke="#FF69B4" stroke-width="1" opacity="0.6"/>
+
+  <!-- Monogram 'A' (Neon Magenta) -->
+  <path d="M 50 25 L 30 75 M 50 25 L 70 75 M 38 60 L 62 60" fill="none" stroke="#E10098" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)"/>
+  
+  <!-- Small floral dot -->
+  <circle cx="50" cy="40" r="4" fill="#8A2BE2" filter="url(#neonGlow)"/>
+</svg>
+</div>
          </div>
       </div>
       <svg viewBox="0 0 150 150" class="svg-hidden">
@@ -227,27 +234,47 @@ i.fas, i.fab, i.far {
       <div class="vs-menu-wrapper">
          <div class="vs-menu-area text-center">
             <button class="vs-menu-toggle"><i class="fas fa-times"></i></button>
-            <div class="mobile-logo"><a href="#">
+            <div class="mobile-logo"><a href="#"><div class="template-logo-placeholder">
 <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="50" cy="50" r="48" fill="none" stroke="#d63384" stroke-width="2"/>
-  <path d="M35 70 L50 30 L65 70 M40 60 L60 60" fill="none" stroke="#d63384" stroke-width="3" stroke-linecap="round"/>
-  <path d="M75 40 C80 50 80 60 75 70" fill="none" stroke="#d63384" stroke-width="3" stroke-linecap="round"/>
-  <path d="M25 40 C20 50 20 60 25 70" fill="none" stroke="#d63384" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="50" cy="20" r="5" fill="#d63384"/>
+  <!-- Glowing effect definitions -->
+  <defs>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background circle (Soft Pink) -->
+  <circle cx="50" cy="50" r="48" fill="#FFF0F5" stroke="#E10098" stroke-width="2"/>
+  
+  <!-- Outer glowing ring (Neon Purple) -->
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#8A2BE2" stroke-width="1.5" filter="url(#neonGlow)"/>
+
+  <!-- Floral abstract shapes -->
+  <path d="M 20 50 Q 50 10 80 50 Q 50 90 20 50 Z" fill="none" stroke="#FF69B4" stroke-width="1" opacity="0.6"/>
+  <path d="M 50 20 Q 90 50 50 80 Q 10 50 50 20 Z" fill="none" stroke="#FF69B4" stroke-width="1" opacity="0.6"/>
+
+  <!-- Monogram 'A' (Neon Magenta) -->
+  <path d="M 50 25 L 30 75 M 50 25 L 70 75 M 38 60 L 62 60" fill="none" stroke="#E10098" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)"/>
+  
+  <!-- Small floral dot -->
+  <circle cx="50" cy="40" r="4" fill="#8A2BE2" filter="url(#neonGlow)"/>
 </svg>
-</a></div>
+</div></a></div>
             <div class="vs-mobile-menu">
                <ul>
                   <li><a href="#">Anasayfa</a></li>
-                  <li><a href="#">Ariana Dünyası</a></li>
+                  <li><a href="#">Hakkımızda</a></li>
                   <li class="menu-item-has-children">
-                     <a href="#">Estetik Yolculuğumuz</a>
+                     <a href="#">Ariana Signature Treatments</a>
                      <ul class="sub-menu">
                          <li><a href="#">Altın Oran Kaş Alım</a></li>
                          <li><a href="#">6D Golden Therapy</a></li>
                          <li><a href="#">Phibrows Microblading</a></li>
-                         <li><a href="#">Uzman Cilt Analizi</a></li>
-                         <li><a href="#">Medikal Cilt Bakımı</a></li>
+                         <li><a href="#">Cilt Analizi</a></li>
+                         <li><a href="#">Cilt Bakımı</a></li>
                          <li><a href="#">Akne Bakımı</a></li>
                          <li><a href="#">Gözenek Bakımı</a></li>
                          <li><a href="#">Leke Bakımı</a></li>
@@ -257,16 +284,16 @@ i.fas, i.fab, i.far {
                          <li><a href="#">Selülit Masası</a></li>
                          <li><a href="#">Manikür &amp; Pedikür</a></li>
                          <li><a href="#">Kalıcı Oje</a></li>
-                         <li><a href="#">Ariana Signature Makeup</a></li>
+                         <li><a href="#">Kalıcı Makyaj</a></li>
                          <li><a href="#">Kaş Laminasyon</a></li>
 
                      </ul>
                   </li>
                   <li class="menu-item-has-children">
-                     <a href="#">Klinik Işıltımız</a>
+                     <a href="#">Galeri</a>
                      <ul class="sub-menu">
-                        <li><a href="#">Foto Klinik Işıltımız</a></li>
-                        <li><a href="#">Video Klinik Işıltımız</a></li>
+                        <li><a href="#">Foto Galeri</a></li>
+                        <li><a href="#">Video Galeri</a></li>
                      </ul>
                   </li>
                   <li><a href="#">İletişim</a></li>
@@ -282,7 +309,7 @@ i.fas, i.fab, i.far {
                   <div class="col-auto text-center py-2 py-md-0">
                      <div class="header-links style-white">
                         <ul>
-                           <li class="d-xxl-inline-block"><i class="far fa-map-marker-alt"></i>Türkali, Ihlamurdere Cd. No:71/1, 34000 Beşiktaş/İstanbul</li>
+                           <li class="d-xxl-inline-block"><i class="far fa-map-marker-alt"></i>Türkali, Ihlamurdere Cd. No:71/1, Beşiktaş</li>
                            <li><i class="fas fa-phone-alt"></i><a href="#">0545 114 40 40</a></li>
                         </ul>
                      </div>
@@ -298,29 +325,49 @@ i.fas, i.fab, i.far {
                <div class="container">
                   <div class="row justify-content-between align-items-center gx-60">
                      <div class="col nopaddingmobile">
-                        <div class="header-logo"><a href="#">
+                        <div class="header-logo"><a href="#"><div class="template-logo-placeholder">
 <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="50" cy="50" r="48" fill="none" stroke="#d63384" stroke-width="2"/>
-  <path d="M35 70 L50 30 L65 70 M40 60 L60 60" fill="none" stroke="#d63384" stroke-width="3" stroke-linecap="round"/>
-  <path d="M75 40 C80 50 80 60 75 70" fill="none" stroke="#d63384" stroke-width="3" stroke-linecap="round"/>
-  <path d="M25 40 C20 50 20 60 25 70" fill="none" stroke="#d63384" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="50" cy="20" r="5" fill="#d63384"/>
+  <!-- Glowing effect definitions -->
+  <defs>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background circle (Soft Pink) -->
+  <circle cx="50" cy="50" r="48" fill="#FFF0F5" stroke="#E10098" stroke-width="2"/>
+  
+  <!-- Outer glowing ring (Neon Purple) -->
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#8A2BE2" stroke-width="1.5" filter="url(#neonGlow)"/>
+
+  <!-- Floral abstract shapes -->
+  <path d="M 20 50 Q 50 10 80 50 Q 50 90 20 50 Z" fill="none" stroke="#FF69B4" stroke-width="1" opacity="0.6"/>
+  <path d="M 50 20 Q 90 50 50 80 Q 10 50 50 20 Z" fill="none" stroke="#FF69B4" stroke-width="1" opacity="0.6"/>
+
+  <!-- Monogram 'A' (Neon Magenta) -->
+  <path d="M 50 25 L 30 75 M 50 25 L 70 75 M 38 60 L 62 60" fill="none" stroke="#E10098" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)"/>
+  
+  <!-- Small floral dot -->
+  <circle cx="50" cy="40" r="4" fill="#8A2BE2" filter="url(#neonGlow)"/>
 </svg>
-</a></div>
+</div></a></div>
                      </div>
                      <div class="col-auto">
                         <nav class="main-menu menu-style1 d-none d-lg-block">
                            <ul>
                   <li><a href="#">Anasayfa</a></li>
-                  <li><a href="#">Ariana Dünyası</a></li>
+                  <li><a href="#">Hakkımızda</a></li>
                   <li class="menu-item-has-children">
-                     <a href="#">Estetik Yolculuğumuz</a>
+                     <a href="#">Ariana Signature Treatments</a>
                      <ul class="sub-menu">
                          <li><a href="#">Altın Oran Kaş Alım</a></li>
                          <li><a href="#">6D Golden Therapy</a></li>
                          <li><a href="#">Phibrows Microblading</a></li>
-                         <li><a href="#">Uzman Cilt Analizi</a></li>
-                         <li><a href="#">Medikal Cilt Bakımı</a></li>
+                         <li><a href="#">Cilt Analizi</a></li>
+                         <li><a href="#">Cilt Bakımı</a></li>
                          <li><a href="#">Akne Bakımı</a></li>
                          <li><a href="#">Gözenek Bakımı</a></li>
                          <li><a href="#">Leke Bakımı</a></li>
@@ -331,16 +378,16 @@ i.fas, i.fab, i.far {
                          <li><a href="#">Selülit Masası</a></li>
                          <li><a href="#">Manikür &amp; Pedikür</a></li>
                          <li><a href="#">Kalıcı Oje</a></li>
-                         <li><a href="#">Ariana Signature Makeup</a></li>
+                         <li><a href="#">Kalıcı Makyaj</a></li>
                          <li><a href="#">Kaş Laminasyon</a></li>
 
                      </ul>
                   </li>
                   <li class="menu-item-has-children">
-                     <a href="#">Klinik Işıltımız</a>
+                     <a href="#">Galeri</a>
                      <ul class="sub-menu">
-                        <li><a href="#">Foto Klinik Işıltımız</a></li>
-                        <li><a href="#">Video Klinik Işıltımız</a></li>
+                        <li><a href="#">Foto Galeri</a></li>
+                        <li><a href="#">Video Galeri</a></li>
                      </ul>
                   </li>
                   <li><a href="#">İletişim</a></li>
@@ -366,20 +413,20 @@ i.fas, i.fab, i.far {
             </div>
          </div>
       </header><section class="hero-layout1">
-   <div class="hero-shape-1 jump-reverse" data-top="14%" data-right="42%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
-   <div class="hero-shape-2 rotate-img" data-top="13%" data-right="10%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
-   <div class="hero-shape-3 jump-img" data-bottom="29%" data-right="0%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+   <div class="hero-shape-1 jump-reverse" data-top="14%" data-right="42%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+   <div class="hero-shape-2 rotate-img" data-top="13%" data-right="10%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+   <div class="hero-shape-3 jump-img" data-bottom="29%" data-right="0%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
    <div class="hero-mask">
       <div class="vs-carousel" data-slide-show="1" data-fade="true">
          <div>
             <div class="hero-inner">
                <div class="hero-img">
-                  <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4046395/pexels-photo-4046395.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                  <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                   <div class="hero-ripple"><i class="ripple"></i><i class="ripple"></i></div>
                </div>
                <div class="hero-content">
-                  <span class="hero-subtitle">Ariana Beauty Center & Clinic | Beşiktaş Güzellik & Klinik</span>
-                  <h1 class="hero-title">Uzman Cilt Analizi</h1>
+                  <span class="hero-subtitle">Güzellik Salonu Şablonu</span>
+                  <h1 class="hero-title">Cilt Analizi</h1>
                   <a target="_blank" href="#" class="vs-btn style3"><i class="fab fa-whatsapp"></i> Randevu Alın</a>
                </div>
             </div>
@@ -387,12 +434,12 @@ i.fas, i.fab, i.far {
          <div>
             <div class="hero-inner">
                <div class="hero-img">
-                  <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                  <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                   <div class="hero-ripple"><i class="ripple"></i><i class="ripple"></i></div>
                </div>
                <div class="hero-content">
-                  <span class="hero-subtitle">Ariana Beauty Center & Clinic | Beşiktaş Güzellik & Klinik</span>
-                  <h1 class="hero-title">Medikal Cilt Bakımı</h1>
+                  <span class="hero-subtitle">Güzellik Salonu Şablonu</span>
+                  <h1 class="hero-title">Cilt Bakımı</h1>
                   <a target="_blank" href="#" class="vs-btn style3"><i class="fab fa-whatsapp"></i> Randevu Alın</a>
                </div>
             </div>
@@ -400,12 +447,12 @@ i.fas, i.fab, i.far {
          <div>
             <div class="hero-inner">
                <div class="hero-img">
-                  <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985330/pexels-photo-3985330.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                  <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                   <div class="hero-ripple"><i class="ripple"></i><i class="ripple"></i></div>
                </div>
                <div class="hero-content">
-                  <span class="hero-subtitle">Ariana Beauty Center & Clinic | Beşiktaş Güzellik & Klinik</span>
-                  <h1 class="hero-title">Ariana Signature Makeup</h1>
+                  <span class="hero-subtitle">Güzellik Salonu Şablonu</span>
+                  <h1 class="hero-title">Kalıcı Makyaj</h1>
                   <a target="_blank" href="#" class="vs-btn style3"><i class="fab fa-whatsapp"></i> Randevu Alın</a>
                </div>
             </div>
@@ -419,7 +466,7 @@ i.fas, i.fab, i.far {
       <div class="shape-mockup jump-reverse-img d-none d-xxl-block" data-top="22%" data-left="-7%">
          <div class="curb-shape1"></div>
       </div>
-      <div class="shape-mockup jump-img d-none d-xxxl-block" data-top="17%" data-right="13%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+      <div class="shape-mockup jump-img d-none d-xxxl-block" data-top="17%" data-right="13%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
       <div class="container">
          <div class="row gx-55">
             <div class="col-lg-5 col-xxl-auto align-self-center wow fadeInUp" data-wow-delay="0.2s">
@@ -440,8 +487,8 @@ i.fas, i.fab, i.far {
                            </text>
                         </svg>
                      </div>
-                     <div class="img-1"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
-                     <div class="img-2 jump-img"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                     <div class="img-1"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3321416/pexels-photo-3321416.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                     <div class="img-2 jump-img"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                   </div>
                </div>
             </div>
@@ -453,11 +500,11 @@ i.fas, i.fab, i.far {
       </div>
    </section>
    <section class="pt-xl-5">
-      <div class="shape-mockup jump d-none d-lg-block" data-top="-3%" data-right="4%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985309/pexels-photo-3985309.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+      <div class="shape-mockup jump d-none d-lg-block" data-top="-3%" data-right="4%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
       <div class="container">
          <div class="title-area text-center">
-            <span class="sec-subtitle">Ariana Beauty Center & Clinic | Beşiktaş Güzellik & Klinik</span>
-            <h2 class="sec-title">Estetik Yolculuğumuz</h2>
+            <span class="sec-subtitle">Güzellik Salonu Şablonu</span>
+            <h2 class="sec-title">Ariana Signature Treatments</h2>
          </div>
 		 
 		 <style>
@@ -499,8 +546,8 @@ i.fas, i.fab, i.far {
                       <div class="col-6 col-lg-2 col-md-2 mb25">
                           <div class="box h-100 d-flex flex-column">
                               <a href="#">
-                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
-                              <h4 class="text-center flex-grow-1">Medikal Cilt Bakımı</h4>
+                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
+                              <h4 class="text-center flex-grow-1">Cilt Bakımı</h4>
                               <div class="details text-center mt-auto">
                               </div>
                               </a>
@@ -508,7 +555,7 @@ i.fas, i.fab, i.far {
                       </div>
                       <div class="col-6 col-lg-4 col-md-4 mb25 animation-zoom-in aos-init aos-animate" data-aos="zoom-in" data-aos-duration="2000">
                           <div class="box h-100 d-flex flex-column">
-                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                               <h4 class="text-center flex-grow-1">Akne Bakımı</h4>
                               <div class="details text-center mt-auto">
                               </div>
@@ -517,7 +564,7 @@ i.fas, i.fab, i.far {
 
                       <div class="col-6 col-lg-4 col-md-4 mb25 animation-zoom-in aos-init aos-animate" data-aos="zoom-in" data-aos-duration="2000">
                           <div class="box h-100 d-flex flex-column">
-                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                               <h4 class="text-center flex-grow-1">Gözenek Bakımı</h4>
                               <div class="details text-center mt-auto">
                               </div>
@@ -526,7 +573,7 @@ i.fas, i.fab, i.far {
 
                       <div class="col-6 col-lg-4 col-md-4 mb25 animation-zoom-in aos-init aos-animate" data-aos="zoom-in" data-aos-duration="2000">
                           <div class="box h-100 d-flex flex-column">
-                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4046395/pexels-photo-4046395.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                               <h4 class="text-center flex-grow-1">Leke Bakımı</h4>
                               <div class="details text-center mt-auto">
                               </div>
@@ -535,7 +582,7 @@ i.fas, i.fab, i.far {
 
                       <div class="col-6 col-lg-4 col-md-4 mb25 animation-zoom-in aos-init aos-animate" data-aos="zoom-in" data-aos-duration="2000">
                           <div class="box h-100 d-flex flex-column">
-                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                               <h4 class="text-center flex-grow-1">Buz Epilasyon</h4>
                               <div class="details text-center mt-auto">
                               </div>
@@ -544,7 +591,7 @@ i.fas, i.fab, i.far {
 
                       <div class="col-6 col-lg-4 col-md-4 mb25 animation-zoom-in aos-init aos-animate" data-aos="zoom-in" data-aos-duration="2000">
                           <div class="box h-100 d-flex flex-column">
-                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985330/pexels-photo-3985330.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                               <h4 class="text-center flex-grow-1">Dudak Renklendirme</h4>
                               <div class="details text-center mt-auto">
                               </div>
@@ -553,7 +600,7 @@ i.fas, i.fab, i.far {
 
                       <div class="col-6 col-lg-4 col-md-4 mb25 animation-zoom-in aos-init aos-animate" data-aos="zoom-in" data-aos-duration="2000">
                           <div class="box h-100 d-flex flex-column">
-                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                               <h4 class="text-center flex-grow-1">G5 Bölgesel İncelme ve Selülit</h4>
                               <div class="details text-center mt-auto">
                               </div>
@@ -568,7 +615,7 @@ i.fas, i.fab, i.far {
 
                       <div class="col-6 col-lg-4 col-md-4 mb25 animation-zoom-in aos-init aos-animate" data-aos="zoom-in" data-aos-duration="2000">
                           <div class="box h-100 d-flex flex-column">
-                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3321416/pexels-photo-3321416.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                               <h4 class="text-center flex-grow-1">Kirpik Lifting</h4>
                               <div class="details text-center mt-auto">
                               </div>
@@ -577,7 +624,7 @@ i.fas, i.fab, i.far {
 
                       <div class="col-6 col-lg-4 col-md-4 mb25 animation-zoom-in aos-init aos-animate" data-aos="zoom-in" data-aos-duration="2000">
                           <div class="box h-100 d-flex flex-column">
-                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                              <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                               <h4 class="text-center flex-grow-1">Kaş Laminasyon</h4>
                               <div class="details text-center mt-auto">
                               </div>
@@ -593,7 +640,66 @@ i.fas, i.fab, i.far {
              <div class="nopaddingformobile col-6 col-xl-2">
                  <a href="#" class="text-inherit">
                      <div class="category-style1">
-                         <div class="category-icon"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Lip Care" style="width:100%;height:100%;object-fit:cover;"><h3 class="category-name">Dudak Renklendirme</h3>
+                         <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                         <h3 class="category-name">6D Golden Therapy</h3>
+                     </div>
+                 </a>
+             </div>
+
+             <div class="nopaddingformobile col-6 col-xl-2">
+                 <a href="#" class="text-inherit">
+                     <div class="category-style1">
+                         <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                         <h3 class="category-name">Phibrows Microblading</h3>
+                     </div>
+                 </a>
+             </div>
+
+             <div class="nopaddingformobile col-6 col-xl-2">
+			<a href="#" class="text-inherit">
+               <div class="category-style1">
+                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                  <h3 class="category-name">Cilt Bakımı</h3>
+               </div>
+			   </a>
+            </div>
+			<div class="nopaddingformobile col-6 col-xl-2">
+			<a href="#" class="text-inherit">
+               <div class="category-style1">
+                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                  <h3 class="category-name">Akne Bakımı</h3>
+               </div>
+			   </a>
+            </div>
+			<div class="nopaddingformobile col-6 col-xl-2">
+			<a href="#" class="text-inherit">
+               <div class="category-style1">
+                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                  <h3 class="category-name">Gözenek Bakımı</h3>
+               </div>
+			   </a>
+            </div>
+			<div class="nopaddingformobile col-6 col-xl-2">
+			<a href="#" class="text-inherit">
+               <div class="category-style1">
+                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                  <h3 class="category-name">Leke Bakımı</h3>
+               </div>
+			   </a>
+            </div>
+			<div class="nopaddingformobile col-6 col-xl-2">
+			<a href="#" class="text-inherit">
+               <div class="category-style1">
+                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                  <h3 class="category-name">Buz Epilasyon</h3>
+               </div>
+			   </a>
+            </div>
+			<div class="nopaddingformobile col-6 col-xl-2">
+			<a href="#" class="text-inherit">
+               <div class="category-style1">
+                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                  <h3 class="category-name">Dudak Renklendirme</h3>
                </div>
 			   </a>
             </div>
@@ -601,7 +707,7 @@ i.fas, i.fab, i.far {
 			<div class="nopaddingformobile col-6 col-xl-2">
 			<a href="#" class="text-inherit">
                <div class="category-style1">
-                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3321416/pexels-photo-3321416.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                   <h3 class="category-name">G5 Bölgesel İncelme Selülit</h3>
                </div>
 			   </a>
@@ -616,7 +722,7 @@ i.fas, i.fab, i.far {
 			<div class="nopaddingformobile col-6 col-xl-2">
 			<a href="#" class="text-inherit">
                <div class="category-style1">
-                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                   <h3 class="category-name">Kirpik Lifting</h3>
                </div>
 			   </a>
@@ -625,7 +731,7 @@ i.fas, i.fab, i.far {
              <div class="nopaddingformobile col-6 col-xl-2">
                  <a href="#" class="text-inherit">
                      <div class="category-style1">
-                         <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985309/pexels-photo-3985309.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                         <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                          <h3 class="category-name">Altın Oran Kaş Alım</h3>
                      </div>
                  </a>
@@ -634,7 +740,7 @@ i.fas, i.fab, i.far {
 			<div class="nopaddingformobile col-6 col-xl-2">
 			<a href="#" class="text-inherit">
                <div class="category-style1">
-                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                   <h3 class="category-name">Kaş Laminasyon</h3>
                </div>
 			   </a>
@@ -643,8 +749,8 @@ i.fas, i.fab, i.far {
 			<div class="nopaddingformobile col-12 col-xl-12">
 			<a href="#" class="text-inherit">
                <div class="category-style1">
-                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
-                  <h3 class="category-name">Uzman Cilt Analizi</h3>
+                  <div class="category-icon"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                  <h3 class="category-name">Cilt Analizi</h3>
                </div>
 			   </a>
             </div>
@@ -657,7 +763,18 @@ i.fas, i.fab, i.far {
          <div class="row">
             <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                <div class="banner-style2 mega-hover">
-                  <div class="banner-img"><img src="https://images.pexels.com/photos/3321416/pexels-photo-3321416.jpeg" alt="Ariana Cosmetics" style="width:100%;height:100%;object-fit:cover;"><span class="banner-label">KOZMETİK</span>
+                  <div class="banner-img"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                  <div class="banner-content">
+                     <span class="banner-label">Cilt Bakımı</span>
+                     <h3 class="banner-title">Cildinizin doğal tonunu bizimle keşfedin.</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+               <div class="banner-style2 layout2 mega-hover">
+                  <div class="banner-img"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                  <div class="banner-content">
+                     <span class="banner-label">KOZMETİK</span>
                      <h3 class="banner-title">Doğal ve Besleyici Kremler</h3>
                   </div>
                </div>
@@ -669,14 +786,14 @@ i.fas, i.fab, i.far {
       <div class="shape-mockup d-none d-xxxl-block" data-top="-26%" data-left="-10%">
          <div class="curb-shape1"></div>
       </div>
-      <div class="shape-mockup jump d-none d-xxxl-block" data-top="-50%" data-right="0"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
-      <div class="shape-mockup jump-reverse d-none d-xxxl-block" data-top="6%" data-right="13%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985330/pexels-photo-3985330.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+      <div class="shape-mockup jump d-none d-xxxl-block" data-top="-50%" data-right="0"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+      <div class="shape-mockup jump-reverse d-none d-xxxl-block" data-top="6%" data-right="13%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
       <div class="container">
          <div class="row gx-80 align-items-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
                <div class="img-box2">
-                  <div class="img-1"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
-                  <div class="img-2 jump"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                  <div class="img-1"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
+                  <div class="img-2 jump"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3321416/pexels-photo-3321416.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                   <div class="img-shape"><span class="img-text jump-reverse">SADELİK</span></div>
                </div>
             </div>
@@ -691,14 +808,14 @@ i.fas, i.fab, i.far {
       </div>
    </section>
    <section class="space-bottom space-top">
-      <div class="shape-mockup jump d-none d-xxl-block" data-left="1%" data-top="-5%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+      <div class="shape-mockup jump d-none d-xxl-block" data-left="1%" data-top="-5%"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
       <div class="container">
          <div class="row justify-content-center text-center">
             <div class="col-md-9 col-lg-7 col-xl-6 wow fadeInUp wow-animated" data-wow-delay="0.2s">
                <div class="title-area text-center">
-                  <span class="sec-subtitle">Ariana Beauty Center & Clinic | Beşiktaş Güzellik & Klinik</span>
-                  <h2 class="sec-title">Işıltı Köşemiz</h2>
-                  <div class="sec-shape"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985309/pexels-photo-3985309.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                  <span class="sec-subtitle">Güzellik Salonu Şablonu</span>
+                  <h2 class="sec-title">Güzellik Merkezimiz</h2>
+                  <div class="sec-shape"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                </div>
             </div>
          </div>
@@ -708,7 +825,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -716,7 +833,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -724,7 +841,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -732,7 +849,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4046395/pexels-photo-4046395.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -740,7 +857,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -748,7 +865,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985330/pexels-photo-3985330.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -756,7 +873,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -764,7 +881,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3321416/pexels-photo-3321416.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -772,7 +889,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -780,7 +897,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985309/pexels-photo-3985309.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -788,7 +905,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -796,7 +913,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -804,7 +921,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                                 <div class="col-6 col-md-4 col-sm-6 col-lg-4 col-xxl-4 filter-item">
@@ -812,7 +929,7 @@ i.fas, i.fab, i.far {
                           <a href="#" class="icon-btn popup-image">
                               <i class="far fa-eye"></i>
                           </a>
-                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4046395/pexels-photo-4046395.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                          <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                       </div>
                   </div>
                         </div>
@@ -823,8 +940,8 @@ i.fas, i.fab, i.far {
          <div class="row justify-content-center text-center">
             <div class="col-md-9 col-lg-7 col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
                <div class="title-area">
-                  <h2 class="sec-title4">Müşterilerimizin Gözünden</h2>
-                  <p class="sec-text">Ariana Beauty ailesinin bir parçası olan misafirlerimizin gerçek deneyimleri.</p>
+                  <h2 class="sec-title4">Gülümseyen Yüzler</h2>
+                  <p class="sec-text">Gülümseyen yüzler ve binlerce mutlu ziyaretçi.</p>
                </div>
             </div>
          </div>
@@ -832,40 +949,40 @@ i.fas, i.fab, i.far {
             <div class="col-lg-4">
                <div class="testi-style3">
                   <span class="testi-icon"><i class="fas fa-quote-right"></i></span>
-                  <div class="testi-avater"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                  <div class="testi-avater"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                   <div class="testi-content">
                      <div class="testi-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                     <p class="testi-text">Temiz işletme, hoş sohbet, doğru ve güvenilir uygulamaları sebebiyle tercih ettiğim işletme.</p>
-                     <h3 class="testi-name">Dilek Ü.</h3>
+                     <p class="testi-text">I had a facial cleansing. Absolutely love how my skin looks and feels. The results are truly amazing. My skin feels and looks younger and healthier. Would recommend to anyone.</p>
+                     <h3 class="testi-name">Serife Atici</h3>
                   </div>
                </div>
             </div>
             <div class="col-lg-4">
                <div class="testi-style3">
                   <span class="testi-icon"><i class="fas fa-quote-right"></i></span>
-                  <div class="testi-avater"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985330/pexels-photo-3985330.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                  <div class="testi-avater"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                   <div class="testi-content">
                      <div class="testi-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                     <p class="testi-text">Çok memnun kaldığım bir yer. Uzun zamandır sürekli geliyoruz, [UZMAN] çok ilgili ve cana yakın. Salonları da çok merkezi konumda ve hijyenik. Herkese tavsiye ediyorum.</p>
-                     <h3 class="testi-name">Serkan Y.</h3>
+                     <p class="testi-text">went to skin specialists to get rid of acne and blemishes. I used all sorts of treatments like creams and masks. A friend recommended Ariana, I'm so glad I met you.</p>
+                     <h3 class="testi-name">Angel Angel</h3>
                   </div>
                </div>
             </div>
             <div class="col-lg-4">
                <div class="testi-style3">
                   <span class="testi-icon"><i class="fas fa-quote-right"></i></span>
-                  <div class="testi-avater"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                  <div class="testi-avater"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                   <div class="testi-content">
                      <div class="testi-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                     <p class="testi-text">Hijyen, özen , kalite ve güleryüzünüz insanın içini  okşuyor. Harika bir yer , harika insanlarla hiç sıkılmadan acısız ve özveriyle yapılan her işin sonu mükemmel oluyor.</p>
-                     <h3 class="testi-name">Duygu I.</h3>
+                     <p class="testi-text">I would like to thank Ms. Aleyna very much for being so understanding and patient in answering all my questions during my first experience. The service is of very high quality; you can come with peace of mind.</p>
+                     <h3 class="testi-name">Ali Kurban</h3>
                   </div>
                </div>
             </div>
             <div class="col-lg-4">
                <div class="testi-style3">
                   <span class="testi-icon"><i class="fas fa-quote-right"></i></span>
-                  <div class="testi-avater"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                  <div class="testi-avater"><div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3321416/pexels-photo-3321416.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                   <div class="testi-content">
                      <div class="testi-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                      <p class="testi-text">Cilt bakimina gittim harika muamele gordum cildim bebek gibi oldu.guler yuzunuze hayran kaldim</p>
@@ -879,16 +996,16 @@ i.fas, i.fab, i.far {
 
     <section class="space-bottom space-top d-none">
         <div class="shape-mockup jump d-none d-xxl-block" data-left="1%" data-top="-5%">
-            <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+            <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
         </div>
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-md-9 col-lg-7 col-xl-6 wow fadeInUp wow-animated" data-wow-delay="0.2s">
                     <div class="title-area text-center">
-                        <span class="sec-subtitle">Ariana Beauty Center & Clinic | Beşiktaş Güzellik & Klinik</span>
-                        <h2 class="sec-title">Fotoğraf Klinik Işıltımızsi</h2>
+                        <span class="sec-subtitle">Güzellik Salonu Şablonu</span>
+                        <h2 class="sec-title">Fotoğraf Galerisi</h2>
                         <div class="sec-shape">
-                            <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985309/pexels-photo-3985309.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                            <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                         </div>
                     </div>
                 </div>
@@ -913,19 +1030,19 @@ i.fas, i.fab, i.far {
                 <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
                     <div class="row filter-active gx-4 gy-gx wow fadeInUp" data-wow-delay="0.3s">
                         <div class="col-6 col-sm-6 col-lg-4 col-xxl-auto filter-item">
-                            <div class="gallery-style3 image-scale-hover"><a href="#" class="icon-btn popup-image"><i class="far fa-eye"></i></a> <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                            <div class="gallery-style3 image-scale-hover"><a href="#" class="icon-btn popup-image"><i class="far fa-eye"></i></a> <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                         </div>
                         <div class="col-6 col-sm-6 col-lg-4 col-xxl-auto filter-item">
-                            <div class="gallery-style3 image-scale-hover"><a href="#" class="icon-btn popup-image"><i class="far fa-eye"></i></a> <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                            <div class="gallery-style3 image-scale-hover"><a href="#" class="icon-btn popup-image"><i class="far fa-eye"></i></a> <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                         </div>
                         <div class="col-6 col-sm-6 col-lg-4 col-xxl-auto filter-item">
-                            <div class="gallery-style3 image-scale-hover"><a href="#" class="icon-btn popup-image"><i class="far fa-eye"></i></a> <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                            <div class="gallery-style3 image-scale-hover"><a href="#" class="icon-btn popup-image"><i class="far fa-eye"></i></a> <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                         </div>
                         <div class="col-6 col-sm-6 col-lg-4 col-xxl-auto filter-item">
-                            <div class="gallery-style3 image-scale-hover"><a href="#" class="icon-btn popup-image"><i class="far fa-eye"></i></a> <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4046395/pexels-photo-4046395.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                            <div class="gallery-style3 image-scale-hover"><a href="#" class="icon-btn popup-image"><i class="far fa-eye"></i></a> <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                         </div>
                         <div class="col-6 col-sm-6 col-lg-4 col-xxl-auto filter-item">
-                            <div class="gallery-style3 image-scale-hover"><a href="#" class="icon-btn popup-image"><i class="far fa-eye"></i></a> <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                            <div class="gallery-style3 image-scale-hover"><a href="#" class="icon-btn popup-image"><i class="far fa-eye"></i></a> <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg" alt="Ariana Service" class="perfect-fit-img"></div></div>
                         </div>
                     </div>
                 </div>
@@ -938,7 +1055,7 @@ i.fas, i.fab, i.far {
                                 <a href="#" class="icon-btn popup-image">
                                     <i class="far fa-eye"></i>
                                 </a>
-                                <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3985330/pexels-photo-3985330.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                                <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3762882/pexels-photo-3762882.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                             </div>
                         </div>
                     </div>
@@ -952,7 +1069,7 @@ i.fas, i.fab, i.far {
                                 <a href="#" class="icon-btn popup-image">
                                     <i class="far fa-eye"></i>
                                 </a>
-                                <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/3058270/pexels-photo-3058270.jpeg" alt="Ariana Beauty" class="filled-img" style="width:100%;height:100%;object-fit:cover;" style="width:100%;height:100%;object-fit:cover;"></div>
+                                <div class="template-image-placeholder"><img src="https://images.pexels.com/photos/4041101/pexels-photo-4041101.jpeg" alt="Ariana Service" class="perfect-fit-img"></div>
                             </div>
                         </div>
                     </div>
